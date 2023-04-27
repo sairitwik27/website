@@ -4,24 +4,48 @@
 	<meta charset="UTF-8">
 	<title>My Website</title>
 	<link rel="stylesheet" href="style.css">
+	<style>
+		.container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin: 20px;
+		}
+		.about-me {
+			text-align: right;
+		}
+		.image-container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.image {
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+		}
+	</style>
 </head>
 <body>
 
-	<header>
-		<img src="MyImage.png" alt="My Image">
-		<nav>
-			<ul>
-				<li><a href="CV/RitwikResumeAS.pdf" class="button">CV</a></li>
-				<li><a href="projects.html" class="button">Projects</a></li>
-				<li><a href="publications.html" class="button">Publications</a></li>
-				<li><a href="contact.html" class="button">Contact Me</a></li>
-			</ul>
-		</nav>
-	</header>
+	<nav>
+		<ul>
+			<li><a href="#">Button 1</a></li>
+			<li><a href="#">Button 2</a></li>
+			<li><a href="#">Button 3</a></li>
+			<li><a href="#">Button 4</a></li>
+		</ul>
+	</nav>
 
-	<h1>About Me</h1>
-	<p>Hi Hello how are you!
-	</p>
-	
+	<div class="container">
+		<div class="image-container">
+			<img src="path/to/your/image.jpg" alt="My Image" class="image">
+		</div>
+		<div class="about-me">
+			<h1>About Me</h1>
+			<p>Hi Hello how are you!</p>
+		</div>
+	</div>
+
 </body>
 </html>
